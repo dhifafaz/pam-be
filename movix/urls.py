@@ -26,7 +26,7 @@ admin.site.site_title  =  "Movix admin site"
 admin.site.index_title  =  "Movix Admin"
 
 urlpatterns = [
-    path('/', admin.site.urls),
+    path('', admin.site.urls),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('movix_api/', include('movix_api.urls')),
     path('__debug__/', include(debug_toolbar.urls)),
