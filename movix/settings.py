@@ -187,7 +187,7 @@ AUTH_PASSWORD_VALIDATORS = [
 #     "192.168.43.140"
 # ]
 
-LOGOUT_REDIRECT_URL = '/admin'
+LOGOUT_REDIRECT_URL = '/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
