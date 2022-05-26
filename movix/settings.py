@@ -117,13 +117,13 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'movixdatabase',
+        'NAME': 'dbotenrf8u3j40',
 
-        'USER': 'movixsuperadmin',
+        'USER': 'noiyspibbqkenv',
 
-        'PASSWORD': 'movix123',
+        'PASSWORD': '18db7dd6bab5f9b775f589ec964bf66f0c8ce0b90d5b5a99e57fc6548c96bb43',
 
-        'HOST': '127.0.0.1',
+        'HOST': 'ec2-3-228-235-79.compute-1.amazonaws.com',
 
         'PORT': '5432',
 
