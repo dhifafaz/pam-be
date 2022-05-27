@@ -26,7 +26,7 @@ class FilmView(viewsets.ModelViewSet):
     def get_queryset(self):
         # Ini Linknya http://127.0.0.1:8000/movix_api/film-list/req_ranking=1   
         req_ranking = self.request.query_params.get('req-ranking')
-        if req_ranking == 1:
+        if req_ranking is not None:
             queryset = Film.objects.all().order_by('-rating')
         else:
             queryset = Film.objects.all().order_by('-tahun_terbit')
