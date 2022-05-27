@@ -9,9 +9,9 @@ class FilmData(admin.ModelAdmin):
     list_display = ('title', 'rating', 'tahun_terbit', 
                 'genre', 'durasi', 'description', 
                 'sutradara', 'image')
-    readonly_fields = ('image', )
+    readonly_fields = ('image_file', )
     
-    def image(self, obj):
+    def image_file(self, obj):
         return format_html("<a href='{url}'>{url}</a>", url=obj.image)
 
 admin.site.register(Film, FilmData)
