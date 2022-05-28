@@ -10,6 +10,4 @@ class FilmSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Film
-        fields = ('title', 'rating', 'tahun_terbit', 
-                'genre', 'durasi', 'description', 
-                'sutradara', 'image')
+        fields = '__all__'
